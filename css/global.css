@@ -1,0 +1,113 @@
+@font-face {
+	font-family: 'Roboto Slab';
+	src: url(../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf)
+}
+
+:root {
+	--background-black: #1f1f1f;
+	--text-white: #efefef;
+}
+
+html {
+	background-color: var(--background-black);
+	scroll-behavior: smooth;
+	font-family: 'Roboto Slab';
+}
+
+body {
+	display: grid;
+	grid-template-rows: calc(100vh + 80px) 100vh;
+	
+	margin: 0;
+}
+
+.top-navbar {
+	position: fixed;
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+	width: 100%;
+	height: 80px;
+	
+	background-color: var(--background-black);
+}
+
+.top-navbar a {
+	color: var(--text-white);
+	text-decoration: none;
+}
+
+.logo, .logo a {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	height: 64px;
+}
+
+.logo h1 {
+	color: var(--text-white);
+	margin: 0;
+}
+
+.navlinks {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navlinks li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	width: 10ex;
+	height: 2em;
+	
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	
+	
+}
+
+.navlinks li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+	width: 100%;
+	height: 2em;
+	
+	border-radius: 1em;
+	
+	transition: color 0.3s, background-color 0.5s;
+}
+
+.navlinks li a:hover {
+	color: var(--background-black);
+	background-color: var(--text-white);
+}
+
+.slides {
+	width: 100%;
+	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	scroll-margin-top: 80px;
+}
+
+#welcome {
+	background-image: url("../img/BackgroundDraft.png");
+}
+
+#about-me {
+	background-image: url("../img/BackgroundDraft2.png");
+}
