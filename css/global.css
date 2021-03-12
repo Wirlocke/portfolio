@@ -15,9 +15,6 @@ html {
 }
 
 body {
-	display: grid;
-	grid-template-rows: calc(100vh + 80px) 100vh;
-	
 	margin: 0;
 }
 
@@ -95,6 +92,13 @@ body {
 	background-color: var(--text-white);
 }
 
+.content {
+	display: grid;
+	grid-template-rows: repeat(6, 100vh);
+	
+	padding-top: 80px;
+}
+
 .slides {
 	width: 100%;
 	
@@ -105,9 +109,25 @@ body {
 }
 
 #welcome {
-	background-image: url("../img/BackgroundDraft.png");
+	background-color: pink;
 }
 
 #about-me {
-	background-image: url("../img/BackgroundDraft2.png");
+	background-color: blue;
+}
+
+#goals {
+	background-color: yellow;
+}
+
+#skills {
+	background-color: green;
+}
+
+#projects {
+	background-color: purple;
+}
+
+#contacts {
+	background-color: orange;
 }
