@@ -69,8 +69,6 @@ body {
 	
 	margin-left: 0.5em;
 	margin-right: 0.5em;
-	
-	
 }
 
 .navlinks li a {
@@ -100,12 +98,20 @@ body {
 }
 
 .slides {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 	width: 100%;
 	
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	scroll-margin-top: 80px;
+}
+
+.descriptions {
+	text-align: center;
 }
 
 #welcome {
@@ -126,6 +132,11 @@ body {
 
 #projects {
 	background-color: purple;
+}
+
+#projects > iframe {
+	width: 100%;
+	height: 100%;
 }
 
 #contacts {
