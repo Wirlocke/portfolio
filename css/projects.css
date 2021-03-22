@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'Roboto Slab';
+	src: url(../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf)
+}
+
+:root {
+	--off-black: #1f1f1f;
+	--off-white: #efefef;
+}
+
+html {
+	background-color: var(--off-white);
+	font-family: 'Roboto Slab';
+}
+
+body {
+	margin: 0;
+}
+
+.selection-nav {
+	position: fixed;
+	
+	width: 10%;
+	height: 100vh;
+	
+	background-color: steelblue;
+}
+
+.selection-grid {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 100vh;
+	
+	padding-left: 10%;
+	
+	background-color: lightsteelblue;
+}
