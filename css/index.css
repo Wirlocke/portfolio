@@ -4,12 +4,12 @@
 }
 
 :root {
-	--background-black: #1f1f1f;
-	--text-white: #efefef;
+	--off-black: #1f1f1f;
+	--off-white: #efefef;
 }
 
 html {
-	background-color: var(--background-black);
+	background-color: var(--off-black);
 	scroll-behavior: smooth;
 	font-family: 'Roboto Slab';
 }
@@ -22,16 +22,16 @@ body {
 	position: fixed;
 	
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 2fr;
 	
 	width: 100%;
-	height: 80px;
+	height: 5em;
 	
-	background-color: var(--background-black);
+	background-color: var(--off-black);
 }
 
 .top-navbar a {
-	color: var(--text-white);
+	color: var(--off-white);
 	text-decoration: none;
 }
 
@@ -41,11 +41,11 @@ body {
 }
 
 .logo img {
-	height: 64px;
+	height: 4em;
 }
 
 .logo h1 {
-	color: var(--text-white);
+	color: var(--off-white);
 	margin: 0;
 }
 
@@ -64,10 +64,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	
-	width: 10ex;
+	width: 5em;
 	height: 2em;
 	
-	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
 
@@ -86,20 +85,23 @@ body {
 }
 
 .navlinks li a:hover {
-	color: var(--background-black);
-	background-color: var(--text-white);
+	color: var(--off-black);
+	background-color: var(--off-white);
 }
 
 .content {
 	display: grid;
-	grid-template-rows: repeat(6, 100vh);
+	grid-template-rows: repeat(4, 3fr) 2fr 1fr;
 	
-	padding-top: 80px;
+	width: 100%;
+	height: calc(5 * (100vh - 5em));
+	
+	padding-top: 5em;
 }
 
 .slides {
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 	
 	width: 100%;
@@ -107,38 +109,40 @@ body {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	scroll-margin-top: 80px;
+	scroll-margin-top: 5em;
 }
 
 .descriptions {
 	text-align: center;
+	box-sizing: border-box;
+	width: 55%;
+	
+	padding: 1em;
 }
 
 #welcome {
-	background-color: pink;
+	background-color: var(--off-white);
 }
 
 #about-me {
-	background-color: blue;
+	background-image: url(../img/about-me-background.jpg);
 }
 
 #goals {
-	background-color: yellow;
+	background-image: url(../img/goals-background.jpg);
 }
 
 #skills {
-	background-color: green;
-}
-
-#projects {
-	background-color: purple;
+	background-color: lightpink;
 }
 
 #projects > iframe {
 	width: 100%;
 	height: 100%;
+	
+	overflow: scroll;
 }
 
 #contacts {
-	background-color: orange;
+	background-color: var(--off-black);
 }
