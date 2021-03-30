@@ -101,7 +101,6 @@ body {
 
 .slides {
 	display: flex;
-	justify-content: left;
 	align-items: center;
 	
 	width: 100%;
@@ -112,27 +111,71 @@ body {
 	scroll-margin-top: 5em;
 }
 
+.text_container {
+	width: 50%;
+	
+	border-radius: 1em;
+	color: var(--off-black);
+	background-color: var(--off-white);
+}
+
 .descriptions {
 	text-align: center;
 	box-sizing: border-box;
-	width: 55%;
+	width: 100%;
+	
+	font-size: x-large;
 	
 	padding: 1em;
 }
 
 #welcome {
-	background-color: var(--off-white);
+	justify-content: right;
+	
+	background-image: url(../img/welcome-background.jpg);
+}
+
+#welcome > .text_container {
+	width: 40%
 }
 
 #about-me {
+	justify-content: left;
+	
 	background-image: url(../img/about-me-background.jpg);
 }
 
 #goals {
+	justify-content: left;
+	
 	background-image: url(../img/goals-background.jpg);
 }
 
+.side_column {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+	width: 25%;
+	height: 100%;
+}
+
+.side_column img {
+	width: 45%;
+	border-radius: 1em;
+}
+
+.side_column h2 {
+	margin-top: 0.10em;
+	margin-bottom: 0.5em;
+	color: var(--off-black);
+}
+
 #skills {
+	justify-content: center;
+	
 	background-color: lightpink;
 }
 
