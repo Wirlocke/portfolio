@@ -5,11 +5,25 @@
 	<title>Projects</title>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" href="../css/projects.css">
+	<script src="../js/falseJSON.js" defer></script>
+	<script src="../js/projects.js" defer></script>
 </head>
 
 <body>
-	<nav class="selection-nav"></nav>
-	<div class="selection-grid"></div>
+	<nav id="selection-nav">
+		<label for="Featured">
+			<input type="radio" name="tag-select" id="Featured" autocomplete="off" onclick="tagClick()" checked />
+			Featured
+		</label>
+
+		<label for="All">
+			<input type="radio" name="tag-select" id="All" autocomplete="off" onclick="revealAll()" />
+			All
+		</label>
+
+		<h4>Other Tags:</h4>
+	</nav>
+	<div id="selection-grid"></div>
 </body>
 
 </html>

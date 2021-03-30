@@ -17,16 +17,33 @@ body {
 	margin: 0;
 }
 
-.selection-nav {
+#selection-nav {
 	position: fixed;
+	
+	display: flex;
+	flex-direction: column;
 	
 	width: 10%;
 	height: 100vh;
 	
+	overflow: auto;
+	
 	background-color: steelblue;
 }
 
-.selection-grid {
+#selection-nav > label,
+#selection-nav > h4 {
+	margin: 0;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+	
+	color: var(--off-black);
+}
+
+#selection-grid {
+	display: flex;
+	flex-wrap: wrap;
+	
 	box-sizing: border-box;
 	width: 100%;
 	min-height: 100vh;
@@ -34,4 +51,38 @@ body {
 	padding-left: 10%;
 	
 	background-color: lightsteelblue;
+}
+
+.project-card {
+	display: flex;
+	
+	width: 20em;
+	height: 10em;
+	
+	margin: 1em;
+	
+	border-radius: 1em;
+	background-color: plum;
+	
+	transition: border-radius 0.3s;
+}
+
+.project-card:hover {
+	border-radius: 3em;
+}
+
+.project-card a {
+	
+	width: 100%;
+	height: 100%;
+	
+	color: var(--off-black);
+	text-decoration: none;
+}
+
+.project-card h3,
+.project-card p {
+	text-align: center;
+	margin-left: 0.25em;
+	margin-right: 0.25em;
 }
