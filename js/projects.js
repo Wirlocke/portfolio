@@ -35,6 +35,7 @@ for (proj of projectData) {
 	let link = document.createElement("a");
 	link.setAttribute("href", proj.link);
 	link.setAttribute("target", "_blank");
+	link.setAttribute("Rel", "noopener noreferrer");
 
 	let title = document.createElement("H3");
 	title.innerText = proj.name;
